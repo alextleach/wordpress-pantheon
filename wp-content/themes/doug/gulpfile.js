@@ -50,8 +50,8 @@ gulp.task('php', function () {
   gulp.src(phpFiles)
     .pipe(cache('php'))
     .pipe(plumber(plumberErrorHandler))
-    .pipe(gulp.dest('./'))
-    .pipe(gulpif(util.env.ftp, serve(credentials)));
+    .pipe(gulp.dest('./'));
+    // .pipe(gulpif(util.env.ftp, serve(credentials)));
 
 });
 
@@ -61,8 +61,8 @@ gulp.task('templates', function () {
   gulp.src('templates/*.php')
     .pipe(cache('php'))
     .pipe(plumber(plumberErrorHandler))
-    .pipe(gulp.dest('templates/'))
-    .pipe(gulpif(util.env.ftp, serve(credentials)));
+    .pipe(gulp.dest('templates/'));
+    // .pipe(gulpif(util.env.ftp, serve(credentials)));
 
 });
 
@@ -72,8 +72,8 @@ gulp.task('modules', function () {
   gulp.src(['templates/modules/*.php', 'templates/modules/*/*.php'])
     .pipe(cache('php'))
     .pipe(plumber(plumberErrorHandler))
-    .pipe(gulp.dest('templates/modules/'))
-    .pipe(gulpif(util.env.ftp, serve(credentials)));
+    .pipe(gulp.dest('templates/modules/'));
+    // .pipe(gulpif(util.env.ftp, serve(credentials)));
 
 });
 
@@ -87,8 +87,8 @@ gulp.task('sass', function () {
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(sourcemaps.write('sass/'))
-    .pipe(gulp.dest('./'))
-    .pipe(gulpif(util.env.ftp, serve(credentials)));
+    .pipe(gulp.dest('./'));
+    // .pipe(gulpif(util.env.ftp, serve(credentials)));
 
 });
 
@@ -102,8 +102,8 @@ gulp.task('js', function () {
     .pipe(jshint.reporter('fail'))
     .pipe(uglify())
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('js/dist'))
-    .pipe(gulpif(util.env.ftp, serve(credentials)));
+    .pipe(gulp.dest('js/dist'));
+    // .pipe(gulpif(util.env.ftp, serve(credentials)));
 
 });
 
@@ -117,8 +117,8 @@ gulp.task('img', function() {
       optimizationLevel: 7,
       progressive: true
     }))
-    .pipe(gulp.dest('img'))
-    .pipe(gulpif(util.env.ftp, serve(credentials)));
+    .pipe(gulp.dest('img'));
+    // .pipe(gulpif(util.env.ftp, serve(credentials)));
 
 });
 
@@ -127,8 +127,8 @@ gulp.task('fonts', function () {
   credentials.remotePath = rootPath+'/fonts';
   gulp.src('fonts.list')
     .pipe(googleWebFonts())
-    .pipe(gulp.dest('fonts'))
-    .pipe(streamify(serve(credentials)));
+    .pipe(gulp.dest('fonts'));
+    // .pipe(streamify(serve(credentials)));
 
 });
 
