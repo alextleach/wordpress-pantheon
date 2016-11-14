@@ -121,90 +121,90 @@ function theme_header_scripts()
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/affix.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-affix', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-affix', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-affix'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/alert.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-alert', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-alert', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-alert'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/button.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-button', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-button', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-button'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/carousel.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-carousel', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-carousel', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-carousel'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/collapse.js';
-        $modified = filemtime( $path );
-        wp_register_script('bootstrap-collapse', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('bootstrap-collapse', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('bootstrap-collapse'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/dropdown.js';
-        $modified = filemtime( $path );
-        wp_register_script('bootstrap-dropdown', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('bootstrap-dropdown', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('bootstrap-dropdown'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/modal.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-modal', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-modal', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-modal'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/popover.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-popover', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-popover', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-popover'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/scrollspy.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-scrollspy', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-scrollspy', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-scrollspy'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/tab.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-tab', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-tab', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-tab'); // Enqueue it!
 
         // $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/tooltip.js';
         // $modified = filemtime( $path );
-        // wp_register_script('bootstrap-tooltip', $path, array('jquery'), $modified); // Custom scripts
+        // wp_register_script('bootstrap-tooltip', $path, array('jquery')); // Custom scripts
         // wp_enqueue_script('bootstrap-tooltip'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/lib/js/bootstrap-sass/transition.js';
-        $modified = filemtime( $path );
-        wp_register_script('bootstrap-transition', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('bootstrap-transition', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('bootstrap-transition'); // Enqueue it!
 
         // END OPTIONAL BOOTSTRAP MODULES ------------------------------------------------------------------------
 
 
         $path = get_template_directory_uri() . '/lib/js/imagesloaded/imagesloaded.pkgd.js';
-        $modified = filemtime( $path );
-        wp_register_script('imagesloadedscripts', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('imagesloadedscripts', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('imagesloadedscripts'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/lib/js/jquery-validation/jquery.validate.js';
-        $modified = filemtime( $path );
+        // $modified = filemtime( $path );
         wp_register_script('validationscripts', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('validationscripts'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/lib/js/magnific-popup/jquery.magnific-popup.js';
-        $modified = filemtime( $path );
-        wp_register_script('magnificscripts', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('magnificscripts', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('magnificscripts'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/lib/js/slideout.js/slideout.js';
-        $modified = filemtime( $path );
-        wp_register_script('slideoutscripts', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('slideoutscripts', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('slideoutscripts'); // Enqueue it!
 
         $path = get_template_directory_uri() . '/js/dist/global.js';
-        $modified = filemtime( $path );
-        wp_register_script('globalscripts', $path, array('jquery'), $modified); // Custom scripts
+        // $modified = filemtime( $path );
+        wp_register_script('globalscripts', $path, array('jquery')); // Custom scripts
         wp_enqueue_script('globalscripts'); // Enqueue it!
     }
 }
@@ -214,8 +214,8 @@ function theme_conditional_scripts()
 {
     if (is_page('home')) {
       $path = get_template_directory_uri() . '/js/dist/home.js';
-      $modified = filemtime( $path );
-      wp_register_script('homescripts', $path, array('jquery'), $modified); // Custom scripts
+      // $modified = filemtime( $path );
+      wp_register_script('homescripts', $path, array('jquery')); // Custom scripts
       wp_enqueue_script('homescripts'); // Enqueue it!
     }
 }
@@ -227,28 +227,28 @@ function theme_styles()
     wp_enqueue_style('normalize'); // Enqueue it!
 
     $path = get_template_directory() . '/fonts/fonts.css';
-    $modified = filemtime( $path );
-    wp_register_style('fonts', get_template_directory_uri() . '/fonts/fonts.css', array(), $modified, 'all');
+    // $modified = filemtime( $path );
+    wp_register_style('fonts', get_template_directory_uri() . '/fonts/fonts.css', array(), 'all');
     wp_enqueue_style('fonts'); // Enqueue it!
 
     $path = get_template_directory() . '/fonts/fontawesome.css';
-    $modified = filemtime( $path );
-    wp_register_style('fontawesome', get_template_directory_uri() . '/fonts/fontawesome.css', array(), $modified, 'all');
+    // $modified = filemtime( $path );
+    wp_register_style('fontawesome', get_template_directory_uri() . '/fonts/fontawesome.css', array(), 'all');
     wp_enqueue_style('fontawesome'); // Enqueue it!
 
     $path = get_template_directory_uri() . '/lib/css/magnific-popup/magnific-popup.css';
-    $modified = filemtime( $path );
-    wp_register_style('magnificstyles', $path, array(), $modified, 'all');
+    // $modified = filemtime( $path );
+    wp_register_style('magnificstyles', $path, array(), 'all');
     wp_enqueue_style('magnificstyles'); // Enqueue it!
 
     $path = get_template_directory_uri() . '/lib/css/slick-carousel/slick.css';
-    $modified = filemtime( $path );
-    wp_register_style('slickstyles', $path, array(), $modified, 'all');
+    // $modified = filemtime( $path );
+    wp_register_style('slickstyles', $path, array(), 'all');
     wp_enqueue_style('slickstyles'); // Enqueue it!
 
     $path = get_template_directory() . '/style.css';
-    $modified = filemtime( $path );
-    wp_register_style('theme', get_template_directory_uri() . '/style.css', array(), $modified, 'all');
+    // $modified = filemtime( $path );
+    wp_register_style('theme', get_template_directory_uri() . '/style.css', array(), 'all');
     wp_enqueue_style('theme'); // Enqueue it!
 }
 
