@@ -1,0 +1,103 @@
+header {
+  .navbar-single {
+    .logo {
+      display: inline-block;
+      a {
+        img {
+          max-height: 50px;
+          display: block;
+        }
+      }
+    }
+    .nav {
+      display: inline-block;
+      vertical-align: top;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .navbar-split {
+    .logo {
+      @extend .col-sm-6;
+      text-align: center;
+      a {
+        img {
+          max-height: 50px;
+          display: inline-block;
+        }
+      }
+    }
+    .nav {
+      @extend .col-sm-9;
+      text-align: center;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    .logo {
+      display: inline-block;
+      a {
+        img {
+          max-height: 50px;
+          display: block;
+        }
+      }
+    }
+    button {
+      background-color: transparent;
+      border-radius: 4px;
+      padding: 4px;
+      border: 1px solid black;
+      .icon-bar {
+        background-color: black;
+        width: 30px;
+        height: 3px;
+        margin: 3px;
+        display: block;
+      }
+    }
+  }
+}
+
+.slideout-menu {
+  position: fixed;
+  // left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background-color: grey;
+  a {
+    padding: 15px;
+    color: white;
+    display: block;
+  }
+}
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+.slideout-open .slideout-menu {
+  display: block;
+}

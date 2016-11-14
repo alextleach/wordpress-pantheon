@@ -1,0 +1,1 @@
+{"version":3,"sources":["home.js"],"names":["jQuery","$","test","console","log"],"mappings":"AAAAA,OAAO,SAAUC,GAEf,GAAIC,GAAO,WACTC,QAAQC,IAAI,kBAGdF","file":"../home.js","sourcesContent":["jQuery(function ($) {\n\n  var test = function() {\n    console.log('home.js loaded');\n  };\n\n  test();\n\n});\n"]}

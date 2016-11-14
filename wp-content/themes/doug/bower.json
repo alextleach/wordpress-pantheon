@@ -1,0 +1,37 @@
+{
+  "name": "doug",
+  "authors": [
+    "Kyle Numann <kyle@goldenspiralmarketing.com>",
+    "Andy Wells <andy@goldenspiralmarketing.com>",
+    "Seth Whiting <seth@goldenspiralmarketing.com>"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "slideout.js": "^0.1.12",
+    "slick-carousel": "^1.5.9",
+    "magnific-popup": "^1.1.0",
+    "imagesloaded": "^4.1.0",
+    "jquery-validation": "^1.15.0"
+  },
+  "install": {
+    "base": "lib",
+    "path": {
+      "js": "js/{name}",
+      "css": "css/{name}",
+      "/[sc|le]ss$/": "css/{name}",
+      "eot": "fonts/{name}",
+      "svg": "fonts/{name}",
+      "ttf": "fonts/{name}",
+      "woff": "fonts/{name}",
+      "woff2": "fonts/{name}"
+    },
+    "sources": {
+      "imagesloaded": "bower_components/imagesloaded/imagesloaded.pkgd.js",
+      "bootstrap-sass": [
+        "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/**",
+        "bower_components/bootstrap-sass/assets/javascripts/bootstrap/**",
+        "bower_components/bootstrap-sass/assets/fonts/bootstrap/**"
+      ]
+    }
+  }
+}

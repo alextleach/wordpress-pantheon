@@ -1,0 +1,1 @@
+jQuery(function(o){console.log("global.js loaded")});

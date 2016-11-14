@@ -1,0 +1,2 @@
+jQuery(function(e){var o=function(){e("footer").css("position","relative");var o=e(window).height(),t=e("footer").offset().top,n=e("footer").height(),i=t+n;o>i&&e("footer").css({position:"fixed",bottom:0})};e(window).on("resize",function(){o()}).resize();var t=new Slideout({panel:document.getElementById("wrapper"),menu:document.getElementById("mobile-menu"),padding:256,tolerance:70,side:"right"});e(".mobile-menu button").on("click",function(){t.toggle()}),e(window).on("resize",function(){e(this).width()>767&&t.close()})});
+//# sourceMappingURL=maps/global.js.map

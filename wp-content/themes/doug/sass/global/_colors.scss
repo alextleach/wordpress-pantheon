@@ -1,0 +1,26 @@
+@each $var, $order in ($color-primary, primary), ($color-secondary, secondary), ($color-tertiary, tertiary), ($color-quaternary, quaternary), ($color-quinary, quinary), ($color-senary, senary) {
+  .txt-color-#{$order} {
+    color: #{$var};
+  }
+  .bg-color-#{$order} {
+    background-color: #{$var};
+  }
+}
+
+@each $var, $order in ($mono-primary, primary), ($mono-secondary, secondary), ($mono-tertiary, tertiary), ($mono-quaternary, quaternary), ($mono-quinary, quinary) {
+  .txt-mono-#{$order} {
+    color: #{$var};
+  }
+  .bg-mono-#{$order} {
+    background-color: #{$var};
+  }
+}
+
+@each $var, $order in ($grayscale-primary, primary), ($grayscale-secondary, secondary), ($grayscale-tertiary, tertiary), ($grayscale-quaternary, quaternary), ($grayscale-quinary, quinary) {
+  .txt-grayscale-#{$order} {
+    color: #{$var};
+  }
+  .bg-grayscale-#{$order} {
+    background-color: #{$var};
+  }
+}
